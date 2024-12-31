@@ -1,0 +1,185 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: disc; /* Garante os pontos pretos padrão */
+    padding-left: 1rem; /* Ajusta o alinhamento geral da lista */
+}
+ul li {
+    margin-bottom: 1.5rem; /* Espaçamento entre os itens */
+    line-height: 1.6; /* Melhor legibilidade */
+    list-style-position:initial; /* Alinha o ponto preto com o texto */
+}
+
+ul li a {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: blue; /* Cor dos links */
+    display: inline; /* Garante que o texto do link siga o fluxo do li */
+    vertical-align: middle; /* Alinha o link verticalmente com o ponto */
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.bar {
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+.anchors h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.anchors ul li a {
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.anchors ul li a:hover {
+    background: #f0f0f0;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border-right: solid 1px #cdcdcd;
+    padding-right: 15px;
+}
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.sidebar ul li a {
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.sidebar ul li a:hover {
+    background: #f0f0f0; /* Destaque ao passar o mouse */
+}
+.main {
+    grid-area: main;
+    padding: 1rem 0;
+}
+.main h2, .main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.main p, .main ul {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+figure {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 5px 50;
+    background-color: #333;
+    /* Fundo escuro para contraste */
+    color: #fff;
+    /* Texto branco */
+}
+
+header .logo img {
+    margin-bottom: 1px;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    /* Tamanho maior para destaque */
+    margin: 0;
+    line-height: 1.2;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff9900, #f0ee6d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1.5s ease-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    /* Levemente maior */
+    font-style: italic;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 2s ease-out 0.5s forwards;
+    /* Aparece após o h1 */
+}
+.seasons-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.seasons-table thead {
+    background-color: #f9f9fb;
+}
+
+.seasons-table th, .seasons-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+}
+
+.seasons-table th {
+    font-weight: bold;
+    color: #333;
+}
+
+.seasons-table tbody tr:nth-child(odd) {
+    background-color: #f9f9fb;
+}
+
+.seasons-table tbody tr:hover {
+    background-color: #e9e9e9;
+}
